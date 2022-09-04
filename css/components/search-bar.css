@@ -1,0 +1,35 @@
+:root{
+    --primary-color: #10305B;
+}
+
+.search-tool {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.search-tool img {
+    position: absolute;
+}  
+  
+.search-icon {
+    padding: 10px 8px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    padding-left: 36px;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.input-field::placeholder, 
+.input-field{
+    color: var(--primary-color);
+}
+
+/*  Descomente a regra abaixo para ao selecionar a barra de pesquisa, remover a borda do input */
+
+/* .input-field:focus{
+    outline: 0;
+} */

@@ -1,0 +1,72 @@
+.post-container{
+    padding: 35px 40px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.options-icon{
+    position: absolute;
+    right: 45px;
+}
+
+/* Grid Items */
+.author-photo{
+    grid-area: author-photo;
+    width: 55px;
+}
+
+.author-info{
+    grid-area: author-info;
+}
+
+.post-msg{
+    grid-area: post-msg;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: 
+    "author-photo author-info"
+    "author-photo post-msg"
+    ;
+    column-gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* END*/
+
+.author-info p{
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.author-info span{
+    font-weight: 200;
+}
+
+.post div{
+    display: flex;
+}
+
+.post-image{
+    width: 100%;
+}
+
+.likes-info{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Aplicando o efeito de clicável */
+
+.author-photo, 
+.options-icon,
+.author-info p,
+.post-image {
+    cursor: pointer;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobi - Rede</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/pages-menu.css">
+    <link rel="stylesheet" href="css/components/favorite-tags.css">
+    <link rel="stylesheet" href="css/components/profile.css">
+    <link rel="stylesheet" href="css/components/search-bar.css">
+    <link rel="stylesheet" href="css/components/feed.css">
+    <link rel="stylesheet" href="css/components/feed-buttons.css">
+    <link rel="stylesheet" href="css/components/lesson.css">
+    <link rel="stylesheet" href="css/components/carrosel-opportunities.css">
+    <link rel="stylesheet" href="css/components/add-people.css">
+    <link rel="stylesheet" href="css/rede.css">
+</head>
+<body>
+        <!-- 
+        Início da página, main CSS:  
+        rede.css    
+    -->
+    <div id="page-container">
+        <div class="lateral-menu">
+            <span class="company-logo">
+                <img src="" alt="Logotipo Jobi">
+            </span>
+            <!-- 
+                CSS da estrutura do menu de navegação entre páginas
+                componentes/pages-menu.css
+            -->
+            <nav class="pages-menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li class="menu-option selected-li">                        
+                        <a href="index.html" class="menu-label selected-a">
+                            <img class="menu-icon" src="images/icons/rede-icon.svg" alt="Ícone de rede">
+                            Rede
+                        </a>
+                    </li>
+                    <li class="menu-option">                        
+                        <a href="#" class="menu-label">
+                            <img class="menu-icon" src="images/icons/vagas-icon.svg" alt="Ícone de vagas">
+                            Vagas
+                        </a>
+                    </li>
+                    <li class="menu-option">                        
+                        <a href="courses-page.html" class="menu-label">
+                            <img class="menu-icon" src="images/icons/courses-icon.svg" alt="Ícone de cursos">
+                            Cursos
+                        </a>
+                    </li>
+                    <li class="menu-option">                        
+                        <a href="#" class="menu-label">
+                            <img class="menu-icon" src="images/icons/settings-icon.svg" alt="Ícone de configurações">
+                            Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="favorite-tags">
+                <h2>Favoritos</h2>
+                <ul>
+                    <li class="favorite-item">
+                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                        <p class="tag-label">Analytics</p>
+                    </li>
+                    <li class="favorite-item">
+                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                        <p class="tag-label">UX & UI</p>
+                    </li>
+                    <li class="favorite-item">
+                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                        <p class="tag-label">Cloud</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile">
+                <span class="profile-photo">
+                    <img src="images/profile-photo.png" alt="Foto de perfil">
+                </span>
+                <p class="user-name">João Vitor</p>
+                <p class="occupation">Analista de dados</p>
+                <button>Meu perfil</button>
+            </div>
+        </div>
+        <section class="feed">
+            <div class="search-tool">
+                <img class="search-icon" src="images/icons/search-icon.svg" alt="Ícone de busca">
+                <input class="input-field" 
+                       type="text" 
+                       placeholder="Buscar">
+            </div>
+            <div class="new-post">
+                <span class="profile-photo">
+                    <img src="images/profile-photo.png" alt="Foto de perfil">
+                </span>
+                <span class="post-input">
+                    <img class="send-icon" src="images/icons/send.svg" alt="Ícone de envio">
+                    <input type="text"
+                    placeholder="O que você está pensando?">
+                </span>
+            </div>
+            <main>
+                <div class="post-container">
+                    <img class="options-icon" src="images/icons/options-icon.svg" alt="">
+                    <div class="post">
+                        <img class="author-photo" src="images/profile-caze.png" alt="Autor do post">
+                        <div class="author-info">
+                            <p>Francisco Oliveira</p>
+                            <span>há 2 horas</span>
+                        </div>
+                        <p class="post-msg">Hoje o pai deitou nas palavras tá?</p>
+                    </div>
+                    <img class="post-image" src="images/post-example-1.png" alt="Imagem do post">
+                    <p class="likes-info">Curtido por Gabriel Silva e outras 291 pessoas</p>
+                    <ul class="button-container">
+                        <li class="post-button">
+                            <img src="images/icons/like-icon.svg" alt="">
+                            <p>Curtir</p>
+                        </li>
+                        <li class="post-button">
+                            <img src="images/icons/comment-icon.svg" alt="">
+                            <p>Comentar</p>
+                        </li>
+                        <li class="post-button">
+                            <img src="images/icons/share-icon.svg" alt="">
+                            <p>Compartilhar</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post-container">
+                    <img class="options-icon" src="images/icons/options-icon.svg" alt="">
+                    <div class="post">
+                        <img class="author-photo" src="images/profile-caze.png" alt="Autor do post">
+                        <div class="author-info">
+                            <p>Francisco Oliveira</p>
+                            <span>há 2 horas</span>
+                        </div>
+                        <p class="post-msg">Hoje o pai deitou nas palavras tá?</p>
+                    </div>
+                    <img class="post-image" src="images/post-example-1.png" alt="Imagem do post">
+                    <p class="likes-info">Curtido por Gabriel Silva e outras 291 pessoas</p>
+                    <ul class="button-container">
+                        <li class="post-button">
+                            <img src="images/icons/like-icon.svg" alt="">
+                            <p>Curtir</p>
+                        </li>
+                        <li class="post-button">
+                            <img src="images/icons/comment-icon.svg" alt="">
+                            <p>Comentar</p>
+                        </li>
+                        <li class="post-button">
+                            <img src="images/icons/share-icon.svg" alt="">
+                            <p>Compartilhar</p>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </section>
+        <div class="explore">
+            <div class="lesson-container">
+                <div class="lesson">
+                    <img src="images/lesson.svg" alt="">
+                    <h3>Pensamento Estratégico</h3>
+                    <p>37 min</p>
+                </div>
+                <div class="lesson">
+                    <img src="images/lesson.svg" alt="">
+                    <h3>Excel 2021</h3>
+                    <p>37 min</p>
+                </div>
+                <div class="lesson">
+                    <img src="images/lesson.svg" alt="">
+                    <h3>Python</h3>
+                    <p>37 min</p>
+                </div>
+            </div>
+            <div class="opportunities">
+                <img class="logo-company" src="images/fiap-logo.png" alt="Logo Fiap">
+                <p>Estagiário TI</p>
+                <p>São Paulo, São Paulo, Brasil</p>
+                <p>Há 2 semanas</p>
+                <button class="follow-button">
+                    <a href="#">
+                        <img src="images/icons/person-icon.svg" alt=""> SEGUIR
+                    </a>                    
+                </button>
+                <img id="right-arrow" src="images/icons/right-arrow.svg" alt="Seta para direita">
+                <img id="left-arrow" src="images/icons/left-arrow.svg" alt="Seta para esquerda">
+            </div>
+            <div class="add-people-container">
+                <div class="add-people">
+                    <img src="images/profile-caze.png" alt="">
+                    <div class="person-data">
+                        <p>Marcos</p>
+                        <p>25 anos</p>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+                    <img src="images/icons/add-icon.svg" alt="">
+                </div>
+                <div class="add-people">
+                    <img src="images/profile-caze.png" alt="">
+                    <div class="person-data">
+                        <p>Felipe</p>
+                        <p>29 anos</p>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+                    <img src="images/icons/add-icon.svg" alt="">
+                </div>
+                <div class="add-people">
+                    <img src="images/profile-caze.png" alt="">
+                    <div class="person-data">
+                        <p>Leonardo</p>
+                        <p>21 anos</p>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+                    <img src="images/icons/add-icon.svg" alt="">
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

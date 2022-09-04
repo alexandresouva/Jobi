@@ -1,0 +1,39 @@
+.favorite-tags {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.favorite-tags h2{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.favorite-item{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.tag-icon{
+    max-width: 22px;
+    margin-right: 14px;
+}
+
+.tag-label{
+    font-weight: 400;
+}
+
+.tag-icon,
+.tag-label:link, .tag-label:visited{
+    color: #000;
+}
+
+.favorite-tags ul li{
+    display: flex;
+    width: 170px;
+    height: 41px;
+}

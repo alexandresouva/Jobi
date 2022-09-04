@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h2, button{
+    font-size: 16px;
+}
+
+input, button {
+    background-color: transparent;
+    border: none;
+}
+
+a:link{
+    text-decoration: none;
+}

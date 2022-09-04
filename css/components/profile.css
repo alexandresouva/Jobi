@@ -1,0 +1,60 @@
+/* É a configuração raíz deste CSS. Altere aqui e os elementos que receberem essas variáveis também serão alterados */
+:root{
+    --profile-font-size: 15px;
+    --profile-primary-color: #415B8A;
+    --profile-secundary-color: #7185B8;
+}
+
+.profile{
+    text-align: center;
+    font-size: var(--profile-font-size)
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-photo img{
+    width: 55px;
+}
+
+.user-name{
+    font-weight: 600;
+    color: var(--profile-primary-color)
+}
+
+.occupation{
+    font-weight: 300;
+    color: #000;
+}
+
+.my-profile{
+    /* Alinhamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Tamanho e posicionamento */
+    width: 160px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 24px;
+    /* Estilização */
+    font-weight: 600;
+    color: var(--profile-secundary-color);
+    border: 1px solid var(--profile-secundary-color);
+    border-radius: 10px;
+}
+
+.my-profile:hover{
+    /* Efeito ao passar o mouse em cima */
+    background: var(--profile-primary-color);
+    color: #FFF;
+}
+ 
+.user-name, 
+.occupation{
+    line-height: 20px;
+    margin-bottom: 8px;
+}

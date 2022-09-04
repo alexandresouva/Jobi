@@ -1,0 +1,47 @@
+:root{
+    --lesson-img-width: 40px;
+}
+
+.lesson-container{
+    padding: 20px 30px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.lesson img{
+    grid-area: lesson-img;
+    width: var(--lesson-img-width);
+}
+
+.lesson h3{
+    grid-area: lesson-name;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.lesson p{
+    grid-area: lesson-time;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.lesson{
+    display: grid;
+    grid-template-columns: var(--lesson-img-width) 1fr;
+    grid-template-areas: 
+    "lesson-img lesson-name"
+    "lesson-img lesson-time"
+    ;
+    column-gap: 23px;
+    margin-bottom: 18px;
+}
+
+/* Usado para retirar a margem do último elemento, pois o contaainer já possui padding */
+.lesson:last-child{
+    margin-bottom: 0;
+}
+
+
+

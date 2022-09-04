@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobi - Vagas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/profile.css">
+    <link rel="stylesheet" href="css/components/pages-menu.css">
+    <link rel="stylesheet" href="css/components/favorite-tags.css">
+    <link rel="stylesheet" href="css/components/search-bar.css">
+    <link rel="stylesheet" href="css/components/course.css">
+    <link rel="stylesheet" href="css/courses-page.css">
+</head>
+<body>
+    <!-- 
+        Início da página, main CSS:  
+        courses-page.css    
+    -->
+    <div id="page-container">
+        <div id="menu-container">
+            <div class="lateral-menu">
+                <!-- 
+                    CSS da estrutura do profile
+                    componentes/profile.css
+                -->
+                <div class="profile">
+                    <span class="profile-photo">
+                        <img src="images/profile-photo.png" alt="Foto de perfil">
+                    </span>
+                    <a href="#" class="user-name">João Vitor</a>
+                    <p class="occupation">Analista de dados</p>
+                    <a class="my-profile" href="#">Meu perfil</a> 
+                </div>
+                <!-- 
+                    CSS da estrutura do menu de navegação entre páginas
+                    componentes/pages-menu.css
+                -->
+                <nav class="pages-menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li class="menu-option">                        
+                            <a href="index.html" class="menu-label">
+                                <img class="menu-icon" src="images/icons/rede-icon.svg" alt="Ícone de rede">
+                                Rede
+                            </a>
+                        </li>
+                        <li class="menu-option">                        
+                            <a href="#" class="menu-label">
+                                <img class="menu-icon" src="images/icons/vagas-icon.svg" alt="Ícone de vagas">
+                                Vagas
+                            </a>
+                        </li>
+                        <li class="menu-option selected-li">                        
+                            <a href="courses-page.html" class="menu-label selected-a">
+                                <img class="menu-icon" src="images/icons/courses-icon.svg" alt="Ícone de cursos">
+                                Cursos
+                            </a>
+                        </li>
+                        <li class="menu-option">                        
+                            <a href="#" class="menu-label">
+                                <img class="menu-icon" src="images/icons/settings-icon.svg" alt="Ícone de configurações">
+                                Configurações
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 
+                    CSS da estrutura do menu de favoritos
+                    componentes/favorite-tags.css
+                -->
+                <div class="favorite-tags">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="Ícone de favoritos">
+                            <a href="#" class="tag-label">Analytics</a>
+                        </li>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="Ícone de favoritos">
+                            <a href="#" class="tag-label">UX & UI</a>
+                        </li>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="Ícone de favoritos">
+                            <a href="#" class="tag-label">Cloud</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!-- 
+                CSS da estrutura da barra de pesquisa
+                componentes/search.bar.css
+            -->
+            <div class="search-tool">
+                <img class="search-icon" src="images/icons/search-icon.svg" alt="Ícone de busca">
+                <input class="input-field" 
+                       type="text" 
+                       placeholder="Buscar">
+            </div>
+            <!-- 
+                CSS da estrutura de filtro
+                componentes/search.bar.css
+            -->
+            <div class="filter-tool">
+                <button>
+                    <img src="images/icons/filter-icon.svg" alt="Ícone de filtro">
+                    <p>Filtrar</p>
+                </button>
+            </div>           
+             <!-- 
+                CSS da estrutura de curso
+                componentes/course.css
+            -->
+            <section class="course-section">
+                <div class="course">
+                    <p class="course-name">Big Data & Analytics</p>
+                    <img class="course-banner" src="images/banner1.png" alt="Banner curso 1">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+                <div class="course">
+                    <p class="course-name">Blockchain Advanced</p>
+                    <img class="course-banner" src="images/banner2.png" alt="Banner curso 2">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+                <div class="course">
+                    <p class="course-name">Branding Analytics</p>
+                    <img class="course-banner" src="images/banner3.png" alt="Banner curso 3">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+                <div class="course">
+                    <p class="course-name">Big Data & Analytics</p>
+                    <img class="course-banner" src="images/banner4.png" alt="Banner curso 4">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+                <div class="course">
+                    <p class="course-name">Big Data & Analytics</p>
+                    <img class="course-banner" src="images/banner5.png" alt="Banner curso 5">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+                <div class="course">
+                    <p class="course-name">Branding Analytics</p>
+                    <img class="course-banner" src="images/banner6.png" alt="Banner curso 6">
+                    <span class="read-more">
+                        <a href="#" class="read-more">Saiba mais...</a>
+                    </span>
+                    <p class="course-description">O mundo nunca produziu tantos dados como hoje, e nesse cenário o Big Data & Analytics é a bola da vez nas empresas. Aprenda como inovar com essas tecnologias.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

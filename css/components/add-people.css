@@ -1,0 +1,43 @@
+:root{
+    --profile-img-width: 50px;
+    --add-icon-width: 16px;
+}
+
+.add-people-container{
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.add-people img:first-child{
+    grid-area: photo-user;
+    width: var(--profile-img-width)
+}
+
+.person-data{
+    grid-area: person-data;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.add-people img:last-child{
+    grid-area: add-icon;
+    width: var(--add-icon-width);
+}
+
+.add-people{
+    display: grid;
+    grid-template-columns: var(--profile-img-width) 1fr var(--add-icon-width);
+    grid-template-areas: 
+    "photo-user person-data add-icon"
+    "photo-user person-data add-icon"
+    ;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 12px;
+}
+
+.add-people:last-child{
+    margin-bottom: 0;
+}

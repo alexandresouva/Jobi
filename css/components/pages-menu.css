@@ -1,0 +1,64 @@
+:root{
+    --menu-font-size: 15px;
+}
+
+.pages-menu {
+    font-size: var(--menu-font-size);
+    line-height: 20px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.pages-menu h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.pages-menu ul{
+    list-style: none;
+}
+
+.menu-option{
+    width: 185px;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.menu-icon{
+    max-width: 22px;
+    margin-right: 14px;
+}
+
+/* Âncoras possuem comportamento específico quando são acessados, o link costuma mudar de cor... Aqui garanto que isso não aconteça, com :link e :visited */
+.menu-label:link, .menu-label:visited{
+    /* Posicionamento */
+    display: flex;
+    align-items: center;
+    /* Tamanho */
+    width: 100%;
+    padding: 10px 0;
+    /* Estilização */
+    color: #000;
+    font-size: var(--menu-font-size);
+    font-weight: 400;
+}
+
+.menu-label:hover{
+	color: #FFF; 
+    border-radius: 10px;
+}
+
+/* Hover do menu e também aponta qual item está selecionado (.selected) */
+
+.pages-menu ul li:hover,
+.selected-li{
+    color: #FFF  ;
+    background: #415B8A;
+    border: 1px solid #7185B8;
+    border-radius: 10px;
+}
+
+.selected-a{
+    color: #FFF !important;
+}
