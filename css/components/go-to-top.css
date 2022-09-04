@@ -1,0 +1,55 @@
+.gotopbtn{
+    /* Alinhamento */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Tamanho e posicionamento */
+    width: 115px;
+    height: 41px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* Estilização */
+    cursor: pointer;
+    background-color: #415B8A;
+    border: 1px solid #7185B8;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 24px;
+    transition: .6s ease-out;
+    z-index: 9;
+    opacity: 0;
+}
+
+.gotopbtn img{
+    width: 18px;
+    margin-right: 10px;
+}
+
+.gotopbtn p{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.gotopbtn.active{
+    top: calc(100% - 100px);
+    opacity: 1;
+}
+
+.gotopbtn:hover{
+    background-color: #2b4168;
+}
+
+.gotopbtn::after{
+    animation-delay: 1s;
+}
+
+.gotopbtn:hover::before,
+.gotopbtn:hover::after{
+    border-color: #27aa60;
+}
+
+
