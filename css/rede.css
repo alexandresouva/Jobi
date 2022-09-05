@@ -15,7 +15,7 @@ body{
 /* Lateral menu */
 .lateral-menu{
     position: fixed;
-    margin: 30px 0 0 30px;
+    margin: 25px 0 0 30px;
     padding: 25px 20px 20px;
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
     border: 1px solid #D9D9D9;
@@ -27,7 +27,7 @@ body{
 /* Feed */
 
 .feed{
-    padding: 30px 40px;
+    padding: 25px 40px;
     background: #F5F5F5;
 }
 
