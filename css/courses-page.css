@@ -65,6 +65,20 @@ main{
 
 /* ------------------------------------ */
 
+/* Alterações em componentes */
+
+.favorite-tags{
+    margin-bottom: 15px;
+}
+
+.favorite-tags ul li{
+    height: 37px;
+}
+
 .favorite-item{
     cursor: pointer;
+}
+
+.pages-menu{
+    margin-bottom: 15px;
 }
