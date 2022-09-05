@@ -1,6 +1,10 @@
+body{
+    background-color: #F5F5F5;
+}
+
 #page-container{
     display: grid;
-    grid-template-columns: 300px 2fr 315px;
+    grid-template-columns: 300px 1fr 315px;
     min-height: 100vh;
     max-width: 1400px;
     margin: auto;
@@ -10,8 +14,12 @@
 
 /* Lateral menu */
 .lateral-menu{
-    padding: 30px 35px 40px;
-    border-right: 1px solid #D9D9D9;
+    position: fixed;
+    margin: 30px 0 0 30px;
+    padding: 25px 20px 20px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
 }
 
     /* Logotipo */
@@ -19,7 +27,7 @@
 .company-logo{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .company-logo img{
@@ -31,7 +39,7 @@
 /* Feed */
 
 .feed{
-    padding: 20px 35px 40px;
+    padding: 30px 40px;
     background: #F5F5F5;
 }
 
@@ -69,8 +77,8 @@
 }
 
 .explore{
+    position: fixed;
     padding: 25px 30px  5px 0;
-    background-color: #F5F5F5;;
 }
 
 
@@ -80,5 +88,17 @@
 /* Alterações em componentes */
 
 .favorite-tags{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+}
+
+.favorite-tags ul li{
+    height: 37px;
+}
+
+.favorite-item{
+    cursor: pointer;
+}
+
+.pages-menu{
+    margin-bottom: 15px;
 }

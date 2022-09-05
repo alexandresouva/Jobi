@@ -3,7 +3,7 @@
 }
 
 .lesson-container{
-    padding: 20px 30px;
+    padding: 18px 30px;
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
@@ -35,7 +35,8 @@
     "lesson-img lesson-time"
     ;
     column-gap: 23px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 /* Usado para retirar a margem do último elemento, pois o contaainer já possui padding */

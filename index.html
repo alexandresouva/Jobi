@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobi - Rede</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/components/pages-menu.css">
     <link rel="stylesheet" href="css/components/favorite-tags.css">
@@ -19,74 +20,88 @@
     <link rel="stylesheet" href="css/rede.css">
 </head>
 <body>
-        <!-- 
+    <!-- 
         Início da página, main CSS:  
         rede.css    
     -->
     <div id="page-container">
-        <div class="lateral-menu">
-            <span class="company-logo">
-                <img src="" alt="Logotipo Jobi">
-            </span>
-            <!-- 
-                CSS da estrutura do menu de navegação entre páginas
-                componentes/pages-menu.css
-            -->
-            <nav class="pages-menu">
-                <h2>Menu</h2>
-                <ul>
-                    <li class="menu-option selected-li">                        
-                        <a href="index.html" class="menu-label selected-a">
-                            <img class="menu-icon" src="images/icons/rede-icon.svg" alt="Ícone de rede">
-                            Rede
-                        </a>
-                    </li>
-                    <li class="menu-option">                        
-                        <a href="#" class="menu-label">
-                            <img class="menu-icon" src="images/icons/vagas-icon.svg" alt="Ícone de vagas">
-                            Vagas
-                        </a>
-                    </li>
-                    <li class="menu-option">                        
-                        <a href="courses-page.html" class="menu-label">
-                            <img class="menu-icon" src="images/icons/courses-icon.svg" alt="Ícone de cursos">
-                            Cursos
-                        </a>
-                    </li>
-                    <li class="menu-option">                        
-                        <a href="#" class="menu-label">
-                            <img class="menu-icon" src="images/icons/settings-icon.svg" alt="Ícone de configurações">
-                            Configurações
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="favorite-tags">
-                <h2>Favoritos</h2>
-                <ul>
-                    <li class="favorite-item">
-                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
-                        <p class="tag-label">Analytics</p>
-                    </li>
-                    <li class="favorite-item">
-                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
-                        <p class="tag-label">UX & UI</p>
-                    </li>
-                    <li class="favorite-item">
-                        <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
-                        <p class="tag-label">Cloud</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="profile">
-                <span class="profile-photo">
-                    <img src="images/profile-photo.png" alt="Foto de perfil">
+        <div id="menu-container">
+            <div class="lateral-menu">
+                <span class="company-logo">
+                    <img src="images/icons/jobi-logotipo.svg" alt="Logotipo Jobi">
                 </span>
-                <p class="user-name">João Vitor</p>
-                <p class="occupation">Analista de dados</p>
-                <button>Meu perfil</button>
+                <!-- 
+                    CSS da estrutura do menu de navegação entre páginas
+                    componentes/pages-menu.css
+                -->
+                <nav class="pages-menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li class="menu-option selected-li">                        
+                            <a href="index.html" class="menu-label selected-a">
+                                <img class="menu-icon" src="images/icons/rede-icon.svg" alt="Ícone de rede">
+                                Rede
+                            </a>
+                        </li>
+                        <li class="menu-option">                        
+                            <a href="#" class="menu-label">
+                                <img class="menu-icon" src="images/icons/vagas-icon.svg" alt="Ícone de vagas">
+                                Vagas
+                            </a>
+                        </li>
+                        <li class="menu-option">                        
+                            <a href="courses-page.html" class="menu-label">
+                                <img class="menu-icon" src="images/icons/courses-icon.svg" alt="Ícone de cursos">
+                                Cursos
+                            </a>
+                        </li>
+                        <li class="menu-option">                        
+                            <a href="#" class="menu-label">
+                                <img class="menu-icon" src="images/icons/settings-icon.svg" alt="Ícone de configurações">
+                                Configurações
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 
+                    CSS da estrutura da lista de favoritos
+                    componentes/favorite-tags.css
+                -->
+                <div class="favorite-tags">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                            <p class="tag-label">Analytics</p>
+                        </li>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                            <p class="tag-label">UX & UI</p>
+                        </li>
+                        <li class="favorite-item">
+                            <img class="tag-icon" src="images/icons/favorite-icon.svg" alt="">
+                            <p class="tag-label">Cloud</p>
+                        </li>
+                    </ul>
+                </div>        
+                <!-- 
+                    CSS da estrutura do perfil
+                    componentes/profile.css
+                -->
+                <div class="profile">
+                    <span class="profile-photo">
+                        <img src="images/profile-photo.png" alt="Foto de perfil">
+                    </span>
+                    <a href="#" class="user-name">João Vitor</a>
+                    <p class="occupation">Analista de dados</p>
+                    <a class="my-profile" href="#">Meu perfil</a> 
+                </div>
             </div>
         </div>
+        <!-- 
+            CSS da estrutura do feed
+            componentes/feed.css
+        -->
         <section class="feed">
             <div class="search-tool">
                 <img class="search-icon" src="images/icons/search-icon.svg" alt="Ícone de busca">
@@ -144,6 +159,10 @@
                     </div>
                     <img class="post-image" src="images/post-example-1.png" alt="Imagem do post">
                     <p class="likes-info">Curtido por Gabriel Silva e outras 291 pessoas</p>
+                <!-- 
+                    CSS da estrutura dos botões do feed
+                    componentes/feed-buttons.css
+                -->
                     <ul class="button-container">
                         <li class="post-button">
                             <img src="images/icons/like-icon.svg" alt="">
@@ -161,67 +180,83 @@
                 </div>
             </main>
         </section>
-        <div class="explore">
-            <div class="lesson-container">
-                <div class="lesson">
-                    <img src="images/lesson.svg" alt="">
-                    <h3>Pensamento Estratégico</h3>
-                    <p>37 min</p>
+        <div id="explorer-container">
+            <div class="explore">
+                <div class="lesson-container">
+                    <div class="lesson">
+                        <img src="images/lesson.svg" alt="">
+                        <h3>Pensamento Estratégico</h3>
+                        <p>37 min</p>
+                    </div>
+                    <div class="lesson">
+                        <img src="images/lesson.svg" alt="">
+                        <h3>Excel 2021</h3>
+                        <p>37 min</p>
+                    </div>
+                    <div class="lesson">
+                        <img src="images/lesson.svg" alt="">
+                        <h3>Python</h3>
+                        <p>37 min</p>
+                    </div>
                 </div>
-                <div class="lesson">
-                    <img src="images/lesson.svg" alt="">
-                    <h3>Excel 2021</h3>
-                    <p>37 min</p>
+                <!-- 
+                    CSS da estrutura do carrossel de oportunidades
+                    componentes/carrossel-opportunities.css
+                -->
+                <div class="opportunities">
+                    <img class="logo-company" src="images/fiap-logo.png" alt="Logo Fiap">
+                    <p>Estagiário TI</p>
+                    <p>São Paulo, São Paulo, Brasil</p>
+                    <p>Há 2 semanas</p>
+                    <button class="follow-button">
+                        <a href="#">
+                            <img src="images/icons/person-icon.svg" alt=""> SEGUIR
+                        </a>                    
+                    </button>
+                    <img id="right-arrow" src="images/icons/right-arrow.svg" alt="Seta para direita">
+                    <img id="left-arrow" src="images/icons/left-arrow.svg" alt="Seta para esquerda">
                 </div>
-                <div class="lesson">
-                    <img src="images/lesson.svg" alt="">
-                    <h3>Python</h3>
-                    <p>37 min</p>
-                </div>
+                <div class="add-people-container">
+                    <div class="add-people">
+                        <img src="images/profile-caze.png" alt="">
+                        <div class="person-data">
+                            <p>Marcos</p>
+                            <p>25 anos</p>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                        <img src="images/icons/add-icon.svg" alt="">
+                    </div>
+                    <div class="add-people">
+                        <img src="images/profile-caze.png" alt="">
+                        <div class="person-data">
+                            <p>Felipe</p>
+                            <p>29 anos</p>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                        <img src="images/icons/add-icon.svg" alt="">
+                    </div>
+                    <div class="add-people">
+                        <img src="images/profile-caze.png" alt="">
+                        <div class="person-data">
+                            <p>Leonardo</p>
+                            <p>21 anos</p>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                        <img src="images/icons/add-icon.svg" alt="">
+                    </div>
+                </div>            
             </div>
-            <div class="opportunities">
-                <img class="logo-company" src="images/fiap-logo.png" alt="Logo Fiap">
-                <p>Estagiário TI</p>
-                <p>São Paulo, São Paulo, Brasil</p>
-                <p>Há 2 semanas</p>
-                <button class="follow-button">
-                    <a href="#">
-                        <img src="images/icons/person-icon.svg" alt=""> SEGUIR
-                    </a>                    
-                </button>
-                <img id="right-arrow" src="images/icons/right-arrow.svg" alt="Seta para direita">
-                <img id="left-arrow" src="images/icons/left-arrow.svg" alt="Seta para esquerda">
-            </div>
-            <div class="add-people-container">
-                <div class="add-people">
-                    <img src="images/profile-caze.png" alt="">
-                    <div class="person-data">
-                        <p>Marcos</p>
-                        <p>25 anos</p>
-                        <p>São Paulo, Brasil</p>
-                    </div>
-                    <img src="images/icons/add-icon.svg" alt="">
-                </div>
-                <div class="add-people">
-                    <img src="images/profile-caze.png" alt="">
-                    <div class="person-data">
-                        <p>Felipe</p>
-                        <p>29 anos</p>
-                        <p>São Paulo, Brasil</p>
-                    </div>
-                    <img src="images/icons/add-icon.svg" alt="">
-                </div>
-                <div class="add-people">
-                    <img src="images/profile-caze.png" alt="">
-                    <div class="person-data">
-                        <p>Leonardo</p>
-                        <p>21 anos</p>
-                        <p>São Paulo, Brasil</p>
-                    </div>
-                    <img src="images/icons/add-icon.svg" alt="">
-                </div>
-            </div>            
-        </div>
+        </div>        
     </div>
+    <!-- 
+        Botão para voltar ao topo
+        componentes/go-to-top.css
+        js/componentes/
+    -->
+    <div class="gotopbtn">
+        <img src="images/icons/go-to-top-icon.svg" alt="Botão ir para o topo">
+        <p>Ir ao topo</p>
+    </div>
+    <script src="js/components/go-to-top.js"></script>
 </body>
 </html>

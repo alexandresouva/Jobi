@@ -10,7 +10,7 @@
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 18px 30px 22px 30px;
     margin-bottom: 15px;
 }
 
@@ -22,7 +22,7 @@
 .opportunities p{
     font-size: 14px;
     font-weight: 400;
-    padding: 2px 0;
+    padding: 1px 0;
 }
 
 .follow-button{
@@ -38,6 +38,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color:  #10305B;
+}
+
+.follow-button:hover{
+    background-color: #a7c1e4;;
 }
 
 .follow-button a img{

@@ -7,7 +7,7 @@
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #D2F2B8, #D2F2B8), linear-gradient(0deg, #D2F2B8, #D2F2B8), #D2F2B8;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 18px 30px;
 }
 
 .add-people img:first-child{
@@ -19,6 +19,7 @@
     grid-area: person-data;
     font-weight: 400;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .add-people img:last-child{
@@ -36,6 +37,10 @@
     align-items: center;
     column-gap: 16px;
     margin-bottom: 12px;
+}
+
+.add-people img{
+    cursor: pointer;
 }
 
 .add-people:last-child{
